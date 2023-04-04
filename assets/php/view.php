@@ -1,11 +1,15 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
 	<title>Página de Teste</title>
+    <link rel="stylesheet" href="../assets/css/view.css">
 </head>
 <body>
 	<h1>Bem-vindo à página de teste!</h1>
-	<p>Esta é uma página de exemplo para demonstrar o redirecionamento após um login bem-sucedido.</p>
+	<a href="#">CADASTRAR CLIENTES E DIVIDENDOS</a>
 </body>
 </html>
