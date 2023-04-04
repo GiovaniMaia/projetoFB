@@ -32,7 +32,7 @@ if(isset($_POST['usuario']) && isset($_POST['senha'])) {   // usado isset para s
         // usuario autenticado com sucesso
         $row = $result->fetch_assoc();
         $_SESSION['id_usuario'] = $row['id']; // armazenando o id do usuario na sessão
-        header("Location: view.php"); // direcionar o usuario para proxima pagina
+        header("Location: ../interface/view.php"); // direcionar o usuario para proxima pagina
         exit();
     } else {
         // usuario não encontrado no banco

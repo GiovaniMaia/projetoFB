@@ -13,3 +13,7 @@ session_start();
 	<a href="#">CADASTRAR CLIENTES E DIVIDENDOS</a>
 </body>
 </html>
+
+<?php
+session_destroy();
+?>

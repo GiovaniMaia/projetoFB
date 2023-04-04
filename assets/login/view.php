@@ -5,7 +5,7 @@
 </head>
 <body>
   <h1>Login</h1>
-  <form method="post" action="index.php">  <!-- usado metodo post chamando o index.php -->
+  <form method="post" action="model.php">  <!-- usado metodo post chamando o model.php -->
     <label for="usuario">Usuário:</label>
     <input type="text" name="usuario" id="usuario"><br>
     <label for="senha">Senha:</label>
@@ -14,3 +14,4 @@
   </form>
 </body>
 </html>
+
