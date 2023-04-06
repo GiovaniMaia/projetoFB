@@ -1,3 +1,14 @@
+<?php
+session_start();
+if(isset($_SESSION['id_usuario'])) {
+    // usuário está logado, redirecionar para a página desejada
+    header("Location: view.php"); // substitua "dashboard.php" pela página que deseja redirecionar
+} else {
+    // usuário não está logado, exibir o formulário de login
+    // ...
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
