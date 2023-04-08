@@ -12,9 +12,10 @@ if(isset($_SESSION['id_usuario'])) {
 <!DOCTYPE html>
 <html>
 <head>
+  <meta lang="pt-br">
   
   <title>Login</title>
-  <link rel="stylesheet" href="
+  <link rel="stylesheet" href="./assets/interface/view_login.css">
 </head>
 <body>
   <h1>Login</h1>
