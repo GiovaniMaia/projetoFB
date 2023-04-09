@@ -56,5 +56,5 @@ input:last-child{
 }
 
 input:last-child:hover{
-    box-shadow: 3px 3px 2px black inset;
+    box-shadow: 3px 3px 2px rgb(82, 21, 21) inset;
 }
