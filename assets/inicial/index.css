@@ -1,0 +1,45 @@
+body {
+    background-color:white;
+    text-align: center;
+  }
+
+  h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:rgb(83, 22, 22);
+  }
+
+  .logo{    
+    width: 302px;
+    height: 390px;    
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }  
+
+  img {
+    width:100%;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 1px 8px rgb(78, 76, 76);
+    border: 2px solid rgb(83, 22, 22);   
+  }
+  
+  a{
+    background-color:rgb(83, 22, 22); /* cor de fundo */
+    color: white; /* cor do texto */
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none; /* remover sublinhado */
+    width: 100%;
+    height: 45px;
+    line-height: 42px;      
+    border-radius: 8px; /* arredondamento de borda */
+    box-shadow: 1px 4px 10px  rgb(0, 0, 0);
+  }
+  
+  a:hover {
+    background-color: #b96868; /* mudar cor de fundo ao passar o mouse */
+    box-shadow: 3px 3px 5px rgb(0, 0, 0) inset;
+  }
+  
