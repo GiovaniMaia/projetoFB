@@ -1,60 +1,76 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-body{
+body {
     text-align: center;
 }
 
-h1{
+h1 {
     font-size: 36px;
     margin-top: 50px;
-    color: rgb(84,23,23);
+    color: rgb(84, 23, 23);
 }
 
-form{
-    width:400px;
-    height: 450px;
+form {
+    width: 350px;
+    height: 400px;
     border-radius: 15px;
     border: 1px solid brown;
     margin: 20px auto;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: rgb(84,23,23);
-    box-shadow: 0 5px 8px ;
-    
+    background-color: rgb(84, 23, 23);
+    box-shadow: 0 5px 8px;
+    padding: 10px;
 }
 
-label{
-    color: white;
-    font-size: 26px;
-    width: 200px;
-    border-radius: 25px;
-    background-color: rgba(240, 248, 255, 0.342);
-    margin-bottom: -20px;
-}
 input{
     width: 86%;
     height: 40px;
     border-radius: 10px;
     border: none;
     box-shadow: 0 1px 5px black;
-    font-size: 24px;
-    padding: 5px;
-    
+    font-size: 18px;
+    padding: 10px;
+    margin:30px auto 5px auto;
+    text-align: center;   
 }
 
-input:last-child{
+input[name="usuario"]{
+    background-image: url("/assets/images/person.png");
+    background-repeat: no-repeat;
+    background-size: 25px ;
+    padding-left: 32px;
+    background-position: left center;
+}
+
+input[name="senha"]{
+    background-image: url("/assets/images/chave.png");
+    background-repeat: no-repeat;
+    background-size:25px;
+    padding-left:30px;
+    background-position: left center;   
+}
+
+label {
+    font-size: 26px;
+    color: white;
+}
+
+input:last-child {
     width: 50%;
     font-size: 20px;
     box-shadow: 0px 3px 8px black;
+    margin-top: 60px;
+
 }
 
-input:last-child:hover{
-    box-shadow: 3px 3px 2px rgb(82, 21, 21) inset;
+input:last-child:hover {
+    box-shadow: 3px 3px 3px rgb(12, 12, 12) inset;
 }
