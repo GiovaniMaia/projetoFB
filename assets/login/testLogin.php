@@ -17,8 +17,8 @@ session_start();
         // EXECUTANDO QUERY
         $result = $conexao->query($sql);
 
-        // print_r($sql);
-        // print_r($result);
+        //print_r($sql);
+        //print_r($result);
 
         // VERIFICAR SE USUARIO E SENHA ESTÃO INCORRETOS AO FAZER LOGIN
         if(mysqli_num_rows($result) <1) {

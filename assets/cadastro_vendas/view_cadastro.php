@@ -10,6 +10,7 @@ if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == t
     header('Location: ../login/view.php');
     
 }
+
 // usuario logado com sucesso
 $logado = $_SESSION['usuario'];
 
@@ -24,7 +25,7 @@ $logado = $_SESSION['usuario'];
     <title>CADASTRO DE VENDAS</title>
 </head>
 <body>
-    <form action="controller_cadastro.php" method="post">
+    <form action="controller_cadastro.php" method="POST">
         <label for="nome">COMPRADOR</label>
         <input type="text" id="nome" name="nome"><br><br>
 
@@ -38,10 +39,10 @@ $logado = $_SESSION['usuario'];
         <input type="tel" id="telefone" name="telefone"><br><br>
 
         <label for="numeroParcela">NUMERO DE PARCELAS</label>
-        <input type="number" name="numParcelas" id="numParcelas" min="1" max="36" required><br><br>
+        <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br>
 
         <label for="valorVenda">VALOR DA VENDA</label>
-        <input type="text" id="valorvenda" name="valorvenda"><br><br>
+        <input type="text" id="valorVenda" name="valorVenda"><br><br>
 
         <label for="comissao">COMISSÃO</label>
         <input type="text" id="comissao" name="comissao"><br><br>
@@ -50,16 +51,16 @@ $logado = $_SESSION['usuario'];
         <input type="text" id="desconto" name="desconto"><br><br>
 
         <label for="valorFinalVenda">VALOR FINAL DA VENDA</label>
-        <input type="text" id="vlrfinal" name="vlrfinal"><br><br>
+        <input type="text" id="valorFinalVenda" name="valorFinalVenda"><br><br>
 
         <label for="sinal">SINAL</label>
         <input type="text" id="sinal" name="sinal"><br><br>
 
         <label for="saldoDevedor">SALDO DEVEDOR</label>
-        <input type="text" id="saldodevedor" name="saldodevedor"><br><br>
+        <input type="text" id="saldoDevedor" name="saldoDevedor"><br><br>
 
         <label for="valorRecebido">VALOR RECEBIDO</label>
-        <input type="text" id="valorrecebido" name="valorrecebido"><br><br>
+        <input type="text" id="valorRecebido" name="valorRecebido"><br><br>
 
         <input type="submit" value="Enviar">
     </form>
