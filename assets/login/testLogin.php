@@ -4,7 +4,7 @@ session_start();
     if(isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha']))
     {
         // ACESSAR O SISTEMA
-        include_once('config.php');
+        include_once('geral_class.php');
         $usuario = $_POST['usuario'];
         $senha = $_POST['senha'];
 

@@ -3,7 +3,7 @@
   <head>
 	<meta charset="UTF-8">
     <title>Página Inicial</title>
-    <link rel="stylesheet" href="./assets/inicial/index.css">
+    <link rel="stylesheet" href="./assets/inicial/home.css">
   </head>
   <body>
     <h1>Bem vindo(a) a Fazenda Berrante</h1>

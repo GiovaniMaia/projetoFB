@@ -1,5 +1,18 @@
 <?php
+
+session_start();
+// print_r($_SESSION);
+// se não existir usuario e senha direcionar para login e destruir sessão com unset
+if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == true)) {
     
+    unset($_SESSION['usuario']);
+    unset($_SESSION['senha']);
+    header('Location: ../login/view.php');
+    
+}
+// usuario logado com sucesso
+$logado = $_SESSION['usuario'];
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -7,6 +20,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="view_cadastro.css">
     <title>CADASTRO DE VENDAS</title>
 </head>
 <body>
