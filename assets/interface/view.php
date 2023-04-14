@@ -22,8 +22,8 @@ session_start();
 </head>
 <body>
 	<h1>Bem-vindo à página de teste!</h1>
-	<a href="#">CADASTRAR CLIENTES E DIVIDENDOS</a><br><br>
-	<a href="#">BUSCAR CLIENTES E DIVIDENDOS</a><br><br>
+	<a href="../cadastro_vendas/view_cadastro.php">CADASTRAR VENDAS</a><br><br>
+	<a href="#">BUSCAR VENDAS</a><br><br>
 	
 	<form action="logout.php">
   		<button type="submit">Deslogar</button>

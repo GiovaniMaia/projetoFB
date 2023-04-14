@@ -43,18 +43,16 @@ input{
 }
 
 input[name="usuario"]{
-    background-image: url("/assets/images/person.png");
+    background-image: url("../images/person.png");
     background-repeat: no-repeat;
     background-size: 25px ;
-    padding-left: 32px;
     background-position: left center;
 }
 
 input[name="senha"]{
-    background-image: url("/assets/images/chave.png");
+    background-image: url("../images/chave.png");
     background-repeat: no-repeat;
     background-size:25px;
-    padding-left:30px;
     background-position: left center;   
 }
 
