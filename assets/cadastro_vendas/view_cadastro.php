@@ -22,45 +22,46 @@ $logado = $_SESSION['usuario'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="view_cadastro.css">
+    
     <title>CADASTRO DE VENDAS</title>
 </head>
 <body>
     <form action="controller_cadastro.php" method="POST">
-        <label for="nome">COMPRADOR</label>
-        <input type="text" id="nome" name="nome"><br><br>
+        <label for="nome">COMPRADOR</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
 
-        <label for="animal">ANIMAL</label>
-        <input type="text" id="animal" name="animal"><br><br>
+        <label for="animal">ANIMAL</label><br>
+            <input type="text" id="animal" name="animal"><br><br>
 
-        <label for="lote">NUMERO DO LOTE</label>
-        <input type="text" id="lote" name="lote"><br><br>
+        <label for="lote">NUMERO DO LOTE</label><br>
+            <input type="text" id="lote" name="lote"><br><br>
 
-        <label for="telefone">TELEFONE</label>
-        <input type="tel" id="telefone" name="telefone"><br><br>
+        <label for="telefone">TELEFONE</label><br>
+            <input type="tel" id="telefone" name="telefone"><br><br>
 
-        <label for="numeroParcela">NUMERO DE PARCELAS</label>
-        <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br>
+        <label for="numeroParcela">NUMERO DE PARCELAS</label><br>
+            <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br>
 
-        <label for="valorVenda">VALOR DA VENDA</label>
-        <input type="text" id="valorVenda" name="valorVenda"><br><br>
+        <label for="valorVenda">VALOR DA VENDA</label><br>
+            <input type="text" id="valorVenda" name="valorVenda" placeholder="R$ 0,00" required><br><br>
 
-        <label for="comissao">COMISSÃO</label>
-        <input type="text" id="comissao" name="comissao"><br><br>
+        <label for="comissao">COMISSÃO</label><br>
+            <input type="text" id="comissao" name="comissao" placeholder="R$ 0,00" required><br><br>
 
-        <label for="desconto">DESCONTO</label>
-        <input type="text" id="desconto" name="desconto"><br><br>
+        <label for="desconto">DESCONTO</label><br>
+            <input type="text" id="desconto" name="desconto" placeholder="R$ 0,00" required><br><br>
 
-        <label for="valorFinalVenda">VALOR FINAL DA VENDA</label>
-        <input type="text" id="valorFinalVenda" name="valorFinalVenda"><br><br>
+        <label for="valorFinalVenda">VALOR FINAL DA VENDA</label><br>
+            <input type="text" id="valorFinalVenda" name="valorFinalVenda" placeholder="R$ 0,00" required><br><br>
 
-        <label for="sinal">SINAL</label>
-        <input type="text" id="sinal" name="sinal"><br><br>
+        <label for="sinal">SINAL</label><br>
+            <input type="text" id="sinal" name="sinal"><br><br>
 
-        <label for="saldoDevedor">SALDO DEVEDOR</label>
-        <input type="text" id="saldoDevedor" name="saldoDevedor"><br><br>
+        <label for="saldoDevedor">SALDO DEVEDOR</label><br>
+            <input type="text" id="saldoDevedor" name="saldoDevedor" placeholder="R$ 0,00" required><br><br>
 
-        <label for="valorRecebido">VALOR RECEBIDO</label>
-        <input type="text" id="valorRecebido" name="valorRecebido"><br><br>
+        <label for="valorRecebido">VALOR RECEBIDO</label><br>
+            <input type="text" id="valorRecebido" name="valorRecebido" placeholder="R$ 0,00" required><br><br>
 
         <input type="submit" value="Enviar">
     </form>
