@@ -42,25 +42,19 @@ date_default_timezone_set('America/Sao_Paulo');
         <label for="telefone">TELEFONE</label><br>
             <input type="tel" id="telefone" name="telefone"><br><br>
             
-        <label for="">VALOR DA COMPRA</label>
-            <input type="text" name="valorVenda" size="10" required="required"><br><br>
-        <label for="">PARCELAS</label>
-            <input type="text" name="numeroParcela" size="10" required="required"><br><br>
+        <label for="">VALOR DA COMPRA</label><br>
+            <input type="text" name="valorVenda" size="" placeholder="R$ 0,00" required="required"><br><br>
+        <label for="">PARCELAS</label><br>
+            <input type="text" name="numeroParcela" size="" placeholder="R$ 0,00" required="required"><br><br>
 
-        <!--<label for="numeroParcela">NUMERO DE PARCELAS</label><br>
-            <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br> 
-
-        <label for="valorVenda">VALOR DA VENDA</label><br>
-            <input type="text" id="valorVenda" name="valorVenda" placeholder="R$ 0,00" required><br><br>  -->
-        
         <label for="comissao">COMISSÃO</label><br>
             <input type="text" id="comissao" name="comissao" placeholder="R$ 0,00" required><br><br>
 
         <label for="desconto">DESCONTO</label><br>
             <input type="text" id="desconto" name="desconto" placeholder="R$ 0,00" required><br><br>
 
-        <label for="valorFinalVenda">VALOR FINAL DA VENDA</label><br>
-            <input type="text" id="valorFinalVenda" name="valorFinalVenda" placeholder="R$ 0,00" required><br><br>
+        <!--<label for="valorFinalVenda">VALOR FINAL DA VENDA</label><br>
+            <input type="text" id="valorFinalVenda" name="valorFinalVenda" placeholder="R$ 0,00" required><br><br> -->
 
         <label for="sinal">SINAL</label><br>
             <input type="text" id="sinal" name="sinal"><br><br>

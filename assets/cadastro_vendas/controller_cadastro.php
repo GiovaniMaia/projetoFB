@@ -15,26 +15,31 @@
     $lote = $_POST['lote'];
     $telefone = $_POST['telefone'];
     $parcela = $_POST['numeroParcela'];
-    $valor = $_POST['valorVenda'];
+    $valor_inicial = $_POST['valorVenda'];
     $comissao = $_POST['comissao'];
     $desconto = $_POST['desconto'];
-    $valorFinal = $_POST['valorFinalVenda'];
+    //$valorFinal = $_POST['valorFinalVenda'];
     $sinal = $_POST['sinal'];
     $saldoDevedor = $_POST['saldoDevedor'];
     $valorRecebido = $_POST['valorRecebido'];
     
+    // varivel valor recebe o valor inicial menos o desconto e comissao
+    $valor = $valor_inicial - $desconto - $comissao;
+
+    //echo "O VALOR FINAL DA VENDA É:  $valor<BR><BR>";
+   
         // verificando conexão 
         if ($conexao->connect_error) {
             die("Conexão falhou: " . $conexao->connect_error);
         }
 
-        //                                      GERANDO PARCELAS 
+        //                                GERANDO PARCELAS 
 
-        $valor = $_POST['valorVenda'];
+        //$valor = $_POST['valorVenda'];
         $parcela = $_POST['numeroParcela'];
 
         // converter valor para o formato real separado pela virgula
-        echo "Valor da compra: " . number_format($valor, 2, ',', '.') . "<br>";
+        echo "Valor da compra com descontos e comissão: " . number_format($valor, 2, ',', '.') . "<br>";
 
         // imprimir a quantidade de parcelas
         echo "Quantidade de parcelas:  $parcela <br><br>";
@@ -115,7 +120,7 @@
         $id_animal = $conexao->insert_id; // armazenado o id do animal
         
         $sql = "INSERT INTO venda (id_comprador, id_animal, valor_venda, comissao, desconto, valor_final, sinal, saldo_devedor, valor_recebido) 
-        VALUES ('$id_comprador', '$id_animal', '$valor', '$comissao', '$desconto', '$valorFinal', '$sinal', '$saldoDevedor', '$valorRecebido')"; // $valor
+        VALUES ('$id_comprador', '$id_animal', '$valor', '$comissao', '$desconto', '$valor', '$sinal', '$saldoDevedor', '$valorRecebido')"; // $valor
         $conexao->query($sql);
         $id_venda = $conexao->insert_id; // armazenado o id do venda e inserido id animal e comprador
 
@@ -127,6 +132,6 @@
         // conexão ok
         //echo "Dados inseridos com sucesso!" . "<br><br>";
         //print_r($_POST);
-        echo "valor da parcela:" . $valor_final_parcela;
+        echo "Valor da ultima parcela: " . number_format($valor_final_parcela, 2, ',', '.') . "<br>";
        
 ?>
