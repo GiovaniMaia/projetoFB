@@ -14,7 +14,10 @@ if((!isset ($_SESSION['usuario']) == true) and (!isset ($_SESSION['senha']) == t
 // usuario logado com sucesso
 $logado = $_SESSION['usuario'];
 
+// definir o fuso horário padrão
+date_default_timezone_set('America/Sao_Paulo');
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -38,13 +41,18 @@ $logado = $_SESSION['usuario'];
 
         <label for="telefone">TELEFONE</label><br>
             <input type="tel" id="telefone" name="telefone"><br><br>
+            
+        <label for="">VALOR DA COMPRA</label>
+            <input type="text" name="valorVenda" size="10" required="required"><br><br>
+        <label for="">PARCELAS</label>
+            <input type="text" name="numeroParcela" size="10" required="required"><br><br>
 
-        <label for="numeroParcela">NUMERO DE PARCELAS</label><br>
-            <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br>
+        <!--<label for="numeroParcela">NUMERO DE PARCELAS</label><br>
+            <input type="number" name="numeroParcela" id="numeroParcela" min="1" max="36" required><br><br> 
 
         <label for="valorVenda">VALOR DA VENDA</label><br>
-            <input type="text" id="valorVenda" name="valorVenda" placeholder="R$ 0,00" required><br><br>
-
+            <input type="text" id="valorVenda" name="valorVenda" placeholder="R$ 0,00" required><br><br>  -->
+        
         <label for="comissao">COMISSÃO</label><br>
             <input type="text" id="comissao" name="comissao" placeholder="R$ 0,00" required><br><br>
 
@@ -65,5 +73,14 @@ $logado = $_SESSION['usuario'];
 
         <input type="submit" value="Enviar">
     </form>
+
+    <!---<form action="parcelas.php" method="POST">
+        <label for="">VALOR DA COMPRA</label>
+            <input type="text" name="valorVenda" size="10" required="required"><br><br>
+        <label for="">PARCELAS</label>
+            <input type="text" name="numeroParcela" size="10" required="required"><br><br>
+
+        <button type="submit">Calcular</button>
+    </form> -->
 </body>
 </html>
