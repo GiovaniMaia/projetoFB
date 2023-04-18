@@ -41,11 +41,15 @@ date_default_timezone_set('America/Sao_Paulo');
 
         <label for="telefone">TELEFONE</label><br>
             <input type="tel" id="telefone" name="telefone"><br><br>
+
+        <label for="lote">NUMERO NOTA FISCAL</label><br>
+            <input type="text" id="notaFiscal" name="notaFiscal"><br><br>
             
-        <label for="">VALOR DA COMPRA</label><br>
-            <input type="text" name="valorVenda" size="" placeholder="R$ 0,00" required="required"><br><br>
         <label for="">PARCELAS</label><br>
             <input type="text" name="numeroParcela" size="" placeholder="R$ 0,00" required="required"><br><br>
+
+        <label for="">VALOR DA VENDA</label><br>
+            <input type="text" name="valorVenda" size="" placeholder="R$ 0,00" required="required"><br><br>
 
         <label for="comissao">COMISSÃO</label><br>
             <input type="text" id="comissao" name="comissao" placeholder="R$ 0,00" required><br><br>
@@ -57,24 +61,14 @@ date_default_timezone_set('America/Sao_Paulo');
             <input type="text" id="valorFinalVenda" name="valorFinalVenda" placeholder="R$ 0,00" required><br><br> -->
 
         <label for="sinal">SINAL</label><br>
-            <input type="text" id="sinal" name="sinal"><br><br>
+            <input type="text" id="sinal" name="sinal" placeholder="R$ 0,00"><br><br>
 
-        <label for="saldoDevedor">SALDO DEVEDOR</label><br>
+        <!--<label for="saldoDevedor">SALDO DEVEDOR</label><br>
             <input type="text" id="saldoDevedor" name="saldoDevedor" placeholder="R$ 0,00" required><br><br>
 
         <label for="valorRecebido">VALOR RECEBIDO</label><br>
-            <input type="text" id="valorRecebido" name="valorRecebido" placeholder="R$ 0,00" required><br><br>
+            <input type="text" id="valorRecebido" name="valorRecebido" placeholder="R$ 0,00" required><br><br> -->
 
         <input type="submit" value="Enviar">
-    </form>
-
-    <!---<form action="parcelas.php" method="POST">
-        <label for="">VALOR DA COMPRA</label>
-            <input type="text" name="valorVenda" size="10" required="required"><br><br>
-        <label for="">PARCELAS</label>
-            <input type="text" name="numeroParcela" size="10" required="required"><br><br>
-
-        <button type="submit">Calcular</button>
-    </form> -->
 </body>
 </html>
